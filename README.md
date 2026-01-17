@@ -41,7 +41,7 @@ A full-stack web application for managing hospital appointments, built with Spri
 
 1. Clone the repository
 ```bash
-git clone https://github.com/Found-1-owners/hospital-booking-system.git
+git clone https://github.com/Hello-beep/hospital-booking-system.git
 cd hospital-booking-system
 ```
 
