@@ -1,0 +1,140 @@
+.appointments-page {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.appointments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.appointments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.appointment-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.appointment-main {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.appointment-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.appointment-info h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.appointment-info .specialization {
+  color: #667eea;
+  margin: 0;
+  font-weight: 500;
+}
+
+.appointment-info .customer-name {
+  color: #666;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.appointment-datetime {
+  text-align: center;
+  min-width: 180px;
+}
+
+.appointment-datetime .date {
+  font-weight: 500;
+  color: #333;
+  margin: 0 0 5px 0;
+}
+
+.appointment-datetime .time {
+  color: #666;
+  margin: 0;
+}
+
+.appointment-status {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 100px;
+  text-align: center;
+}
+
+.status-pending {
+  background-color: #fff3e0;
+  color: #e65100;
+}
+
+.status-approved {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-cancelled {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.appointment-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.appointment-actions .btn {
+  padding: 8px 20px;
+}
+
+.no-appointments {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.no-appointments p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .appointments-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+  }
+
+  .appointment-main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .appointment-datetime {
+    text-align: left;
+  }
+
+  .appointment-status {
+    align-self: flex-start;
+  }
+}
